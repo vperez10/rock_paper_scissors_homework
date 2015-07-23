@@ -5,14 +5,14 @@ In this project, you will practice using routes with variable segments, and usin
 ## Setup
 
  1. First **fork** this repository to your own account.
- 1. *Then* clone your copy to your computer.
+ 1. *Then* clone from **your copy** to your computer.
  1. `cd` into the root folder.
  1. `bundle install` (or `bundle` for short)
  1. `rails server` (or `rails s` for short)
  1. Open the whole folder of code in Sublime.
  1. Navigate to [http://localhost:3000](http://localhost:3000) in Chrome.
 
-The first thing to notice is that, when you visit the bare domain, it redirects you to the URL [http://localhost:3000/mockup.html](http://localhost:3000/mockup.html). (There is no route yet for this URL, hence the error message.)
+The first thing to notice is that, when you visit the bare domain, it redirects you to the URL [http://localhost:3000/mockup.html](http://localhost:3000/mockup.html).
 
 Read `config/routes.rb` and `app/controllers/game_controller.rb` to see how I achieved that. Then, ignore that code. I just included it for your convenience.
 
