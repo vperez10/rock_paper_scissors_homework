@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  get("/play/:the_move", { :controller => "game", :action => "flexible" })
+  # This route is for the bare domain. You can ignore it.
+  get("/", { :controller => "game", :action => "home" })
+
+  # Your code goes below.
+
 end

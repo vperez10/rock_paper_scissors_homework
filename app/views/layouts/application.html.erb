@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RockPaperScissorsHomework</title>
+  <title>Rock, Paper, Scissors / Homework</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <hr>
+
+  <div class="row">
+    <div class="col-md-4">
+      <a href="/play/rock" class="btn btn-warning btn-block btn-lg">Play rock.</a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="/play/paper" class="btn btn-warning btn-block btn-lg">Play paper.</a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="/play/scissors" class="btn btn-warning btn-block btn-lg">Play scissors.</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <%= yield %>
+</div>
 
 </body>
 </html>
