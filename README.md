@@ -36,7 +36,7 @@ Connect the RCAV dots; get some static output to show up (e.g., "Hi!"). Remember
 
 Copy the markup over from the mockup into your view templates. (Some of the markup should go in the application layout (the stuff that is common to every page), and some of it should go in your view template (the stuff that changes based on each request).)
 
-Bring the static mockup to life, one piece at a time:
+Bring the static markup in your view template to life, one piece at a time:
 
  - Replace static markup with embedded Ruby to make the user's move panel dynamic. It should show the right copy and image depending on whether I visit `/play/rock`, `/play/paper`, or `/play/scissors`. Remember: Rails puts whatever comes after the slash in a variable route into the `params` hash. Look at your server log to see what it looks like. In the action, pull the input out of the `params` hash.
  - Replace static markup with embedded Ruby to make the computer's move panel dynamic. In the action, choose a random move for the computer.
