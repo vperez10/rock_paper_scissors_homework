@@ -24,7 +24,9 @@ I have already finished my part of the job. I have written a mockup that include
 
 The three URLs that I used for the links, `/play/rock`, `/play/paper`, `/play/scissors`, don't work. Your job: make everything work.
 
-Here is a suggested plan of attack:
+===
+
+You can approach it however you like, but here is a suggested plan of attack:
 
 Add a single, dynamic route:
 
