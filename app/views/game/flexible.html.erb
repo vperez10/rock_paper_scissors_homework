@@ -14,15 +14,15 @@
 
   <div class="row">
     <div class="col-md-4">
-      <a href="/play/rock" class="btn btn-warning btn-block btn-lg">Play rock.</a>
+      <a href="/flexible/rock" class="btn btn-warning btn-block btn-lg">Play rock.</a>
     </div>
 
     <div class="col-md-4">
-      <a href="/play/paper" class="btn btn-warning btn-block btn-lg">Play paper.</a>
+      <a href="/flexible/paper" class="btn btn-warning btn-block btn-lg">Play paper.</a>
     </div>
 
     <div class="col-md-4">
-      <a href="/play/scissors" class="btn btn-warning btn-block btn-lg">Play scissors.</a>
+      <a href="/flexible/scissors" class="btn btn-warning btn-block btn-lg">Play scissors.</a>
     </div>
   </div>
 
@@ -34,10 +34,10 @@
       <div class="col-md-6">
         <div class="panel panel-success">
           <div class="panel-heading">
-            <h3 class="panel-title text-center">You played rock.</h3>
+            <h3 class="panel-title text-center">You played <%= @user_move %>.</h3>
           </div>
           <div class="panel-body">
-            <img src="/assets/images/rock.png" class="img-responsive">
+            <img src="/assets/images/<%= @user_move %>.png" class="img-responsive">
           </div>
         </div>
       </div>
@@ -45,10 +45,10 @@
       <div class="col-md-6">
         <div class="panel panel-danger">
           <div class="panel-heading">
-            <h3 class="panel-title text-center">The computer played scissors.</h3>
+            <h3 class="panel-title text-center">The computer played <%= @computer_move %>.</h3>
           </div>
           <div class="panel-body">
-            <img src="/assets/images/scissors.png" class="img-responsive">
+            <img src="/assets/images/<%= @computer_move %>.png" class="img-responsive">
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="well">
-          <h1 class="text-center">You won!</h1>
+          <h1 class="text-center"><%= @outcome %></h1>
         </div>
       </div>
     </div>

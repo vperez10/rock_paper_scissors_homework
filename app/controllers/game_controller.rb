@@ -1,24 +1,43 @@
 class GameController < ApplicationController
   # This action is for the bare domain. You can ignore it.
-  def computer_move
-  	@computer_move = ["rock", "paper", "scissors"].sample
-  end
-
   def home
-    redirect_to("/mockup.html")
+  	redirect_to("/mockup.html")
   end
 
-  def rock
-  	render("play.html.erb")
-  end
+  def flexible
+  	@user_move = params["move"]
+  	@computer_move = ["rock", "paper", "scissors"].sample
 
-  def paper
-  	render("play.html.erb")
-  end
+  	if @user_move == @computer_move
+  		@outcome = "You tied!"
+  	elsif @user_move == "paper" and @computer_move == "rock"
+  		@outcome = "You win!"
+  	elsif @user_move == "rock" and @computer_move == "paper"
+  		@outcome = "You lose!"
+  	elsif @user_move == "paper" and @computer_move == "scissors"
+  		@outcome = "You lose!"
+  	elsif @user_move == "scissors" and @computer_move == "paper"
+  		@outcome = "You win!"
+  	elsif @user_move == "scissors" and @computer_move == "rock"
+  		@outcome = "You lose!"
+  	elsif @user_move == "rock" and @computer_move == "scissors"
+  		@outcome = "You win!"
+  	end
 
-  def scissors
-  	render("play.html.erb")
-  end
+  		render("game/flexible.html.erb")
+  	end
+
+def rock
+	render("game/flexible/rock")
+end
+
+def paper
+	render("game/flexible/paper")
+end
+  	
+def scissors
+	render("game/flexible/scissors")
+end
 
   # Your code goes below.
 
