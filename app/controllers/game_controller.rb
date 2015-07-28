@@ -27,17 +27,17 @@ class GameController < ApplicationController
   		render("game/flexible.html.erb")
   	end
 
-def rock
-	render("game/flexible/rock")
-end
+#def rock
+#	render("game/flexible/rock")
+#end
 
-def paper
-	render("game/flexible/paper")
-end
+#def paper
+#	render("game/flexible/paper")
+#end
   	
-def scissors
-	render("game/flexible/scissors")
-end
+#def scissors
+#	render("game/flexible/scissors")
+#end
 
   # Your code goes below.
 
