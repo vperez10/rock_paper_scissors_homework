@@ -5,6 +5,7 @@ class GameController < ApplicationController
   end
 
   def flexible
+  	@all_moves = Move.all
   	@user_move = params["move"]
   	@computer_move = ["rock", "paper", "scissors"].sample
 
@@ -27,18 +28,5 @@ class GameController < ApplicationController
   		render("game/flexible.html.erb")
   	end
 
-#def rock
-#	render("game/flexible/rock")
-#end
-
-#def paper
-#	render("game/flexible/paper")
-#end
-  	
-#def scissors
-#	render("game/flexible/scissors")
-#end
-
-  # Your code goes below.
 
 end

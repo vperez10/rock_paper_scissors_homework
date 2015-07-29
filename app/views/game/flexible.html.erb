@@ -9,6 +9,12 @@
 </head>
 <body>
 
+<%= @all_moves.each do |move| %>
+<li>
+<%= move.user_move %> / <%= move.computer_move %>
+</li>
+<% end %>
+
 <div class="container">
   <hr>
 

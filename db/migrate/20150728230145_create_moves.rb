@@ -1,6 +1,6 @@
 class CreateMoves < ActiveRecord::Migration
   def change
-    create_table :moves do |t|
+    create_table :move do |t|
       t.string :user_move
       t.string :computer_move
       t.integer :user_wins
