@@ -84,27 +84,6 @@
         </tr>
 
         <tr>
-          <td>rock</td>
-          <td>3</td>
-          <td>0</td>
-          <td>1</td>
-        </tr>
-
-        <tr>
-          <td>paper</td>
-          <td>0</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-
-        <tr>
-          <td>scissors</td>
-          <td>1</td>
-          <td>2</td>
-          <td>2</td>
-        </tr>
-
-        <tr>
           <th>Total</th>
           <th>4</th>
           <th>3</th>
@@ -118,7 +97,6 @@
       <div class="panel-heading">
         <h5 class="panel-title">
           Complete history
-          (11)
         </h5>
       </div>
 
@@ -130,84 +108,13 @@
           <th>Computer Wins</th>
           <th>Tie</th>
         </tr>
-
-          <tr>
-            <td>rock</td>
-            <td>scissors</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>rock</td>
-            <td>rock</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>rock</td>
-            <td>scissors</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>paper</td>
-            <td>paper</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>scissors</td>
-            <td>rock</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>scissors</td>
-            <td>scissors</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>scissors</td>
-            <td>scissors</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>scissors</td>
-            <td>paper</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>scissors</td>
-            <td>rock</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>paper</td>
-            <td>scissors</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>rock</td>
-            <td>scissors</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
+        <% @all_moves do|track| %>
+        <tr>
+        <td> <% track.user_move %></td>
+        <td> <% track.computer_move %></td>
+        <td> <% track.user_wins %></td>
+        <td> <% track.computer_wins %></td>
+        </tr>
       </table>
     </div>
   </div>
