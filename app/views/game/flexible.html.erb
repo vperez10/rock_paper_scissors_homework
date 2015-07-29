@@ -9,11 +9,6 @@
 </head>
 <body>
 
-<%= @all_moves.each do |move| %>
-<li>
-<%= move.user_move %> / <%= move.computer_move %>
-</li>
-<% end %>
 
 <div class="container">
   <hr>
@@ -107,14 +102,7 @@
           <th>User Wins</th>
           <th>Computer Wins</th>
           <th>Tie</th>
-        </tr>
-        <% @all_moves do|track| %>
-        <tr>
-        <td> <% track.user_move %></td>
-        <td> <% track.computer_move %></td>
-        <td> <% track.user_wins %></td>
-        <td> <% track.computer_wins %></td>
-        </tr>
+        
       </table>
     </div>
   </div>
