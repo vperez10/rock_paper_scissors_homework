@@ -1,7 +1,7 @@
 class GameController < ApplicationController
   # This action is for the bare domain. You can ignore it.
   def home
-  	redirect_to("/mockup.html")
+  	redirect_to("/flexible/:move")
   end
 
   def flexible
